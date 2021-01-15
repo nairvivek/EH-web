@@ -1,0 +1,19 @@
+body
+{
+
+background-image: url(rr.png);
+
+}
+
+div.login-entry {
+width: 85px;
+display: inline-block;
+text-align: center;
+}
+.content{
+
+max-width: 600px;
+margin: auto
+text-align: center;
+}
+
