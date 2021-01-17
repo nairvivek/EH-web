@@ -7,13 +7,20 @@
 include 'common.php';
 
 
-$s= "SELECT name FROM records where email_address='$mailid' OR email_address = '$nmail_id'";
-echo '$name';
+$sql7= "SELECT name, email_address FROM records where name LIKE 'nsearch'";
+
+$re=$res->query($sql7);
+  if (mysqli_query($res, $sql7)) {
+      echo " usernames are listed";
+      }
+
+
+//echo '$name';
 
 ?>
 
 
-<div class="entry">
+<div class="entry12">
 
  <label for="Search">Search</label>
  <input type="text" placeholder="Search" id="nsearch" name="nsearch"<br><br>
